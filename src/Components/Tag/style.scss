@@ -1,0 +1,32 @@
+.Tag {
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+  padding: 4px;
+  border: 1px solid #adb5bd;
+  border-radius: 10px;
+
+  &:nth-child(1) {
+    border: 1px solid #008ffb;
+  }
+
+  &:nth-child(2) {
+    border: 1px solid #00e396;
+  }
+
+  &__btn {
+    display: block;
+    border: none;
+    outline: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 5px;
+    background: url('./images/cross.svg') center center / cover no-repeat;
+  }
+
+  &__name {
+    pointer-events: none;
+    font-weight: 400;
+  }
+}

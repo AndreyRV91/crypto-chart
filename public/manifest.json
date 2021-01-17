@@ -1,0 +1,6 @@
+{
+  "short_name": "Crypto charts",
+  "name": "Crypto charts",
+  "start_url": ".",
+  "display": "standalone"
+}

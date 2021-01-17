@@ -1,0 +1,33 @@
+@import '../App/mixins';
+@import '../App/variables';
+
+.DatePicker {
+  & .react-daterange-picker {
+    box-sizing: border-box;
+    height: 100%;
+    border: $mainLine;
+    border-radius: 7px;
+    padding: 0 10px;
+  }
+
+  & .react-daterange-picker__wrapper {
+    border: none;
+    color: black;
+    transition: 0.3s;
+  }
+
+  & .react-calendar {
+    @include shadowedBorder();
+    border: none;
+    transform: translateY(5px);
+  }
+}
+
+.react-daterange-picker__inputGroup {
+  min-width: auto;
+}
+
+.react-daterange-picker__calendar {
+  position: absolute;
+  z-index: 100;
+}

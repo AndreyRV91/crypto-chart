@@ -1,0 +1,4 @@
+@mixin shadowedBorder() {
+  box-shadow: 2px 2px 7px 0px #00000033, 0 6px 20px 0 #00000030;
+  border-radius: 7px;
+}

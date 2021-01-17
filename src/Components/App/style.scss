@@ -1,0 +1,36 @@
+@import 'mixins';
+@import '../App/variables';
+@import './scrollbarStyle';
+
+* {
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+html {
+  font-family: 'Roboto', 'sans-serif';
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.App {
+  min-width: 320px;
+  max-width: 1600px;
+  padding-top: 5px;
+  margin: 30px auto 0 auto;
+  @include shadowedBorder();
+
+  &__header {
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 26px;
+    text-align: center;
+    border-bottom: $mainLine;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+}

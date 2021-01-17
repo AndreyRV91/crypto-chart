@@ -1,0 +1,40 @@
+@import '../App/mixins';
+@import '../App/variables';
+
+.ChartForm {
+  display: flex;
+  padding: 0 10px;
+
+  &__tickers {
+    box-sizing: border-box;
+    height: 38px;
+    display: flex;
+    flex-grow: 1;
+    border: $mainLine;
+    border-radius: 7px;
+  }
+
+  & .DatePicker {
+    height: 38px;
+    margin-left: 10px;
+  }
+
+  &__selected {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ChartForm {
+    display: block;
+
+    & .DatePicker {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 10px;
+      margin-left: 0;
+    }
+  }
+}
